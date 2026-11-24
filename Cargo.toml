@@ -1,0 +1,60 @@
+[package]
+name = "mesh-llm-tempo"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT OR Apache-2.0"
+description = "OUSD payments and refundable identity bonds on Tempo for Mesh"
+default-run = "tempo"
+
+[features]
+offline-fixture = ["dep:axum"]
+
+[dependencies]
+alloy = { version = "=2.1.1", features = ["signer-keystore"] }
+anyhow = "1"
+axum = { version = "0.8", optional = true }
+clap = { version = "4", features = ["derive"] }
+fs2 = "0.4"
+hex = "0.4"
+mesh-llm-plugin = { git = "https://github.com/Mesh-LLM/mesh-llm", rev = "46da729c7102108f71e41a4998f10d498b9d42dd" }
+rand = "0.8"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+rusqlite = { version = "0.37", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+tempo-alloy = { git = "https://github.com/tempoxyz/tempo", tag = "tempo-alloy@1.10.1" }
+tokio = { version = "1", features = ["full"] }
+tracing = "0.1"
+uuid = { version = "1", features = ["v4"] }
+zeroize = { version = "1", features = ["alloc"] }
+
+[dev-dependencies]
+tempfile = "3"
+tokio = { version = "1", features = ["test-util"] }
+
+[[bin]]
+name = "tempo"
+path = "src/main.rs"
+
+[[bin]]
+name = "tempo-fixture"
+path = "src/bin/tempo-fixture.rs"
+required-features = ["offline-fixture"]
+
+[[bin]]
+name = "demo-backend-fixture"
+path = "src/bin/demo-backend-fixture.rs"
+required-features = ["offline-fixture"]
+
+[[bin]]
+name = "host-smoke"
+path = "src/bin/host-smoke.rs"
+required-features = ["offline-fixture"]
+
+[profile.dev]
+debug = 0
+
+[profile.test]
+debug = 0

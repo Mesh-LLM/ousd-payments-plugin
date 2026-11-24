@@ -1,0 +1,17 @@
+{
+  "data_dir": "/ABS/private/seller/payments",
+  "prices": {
+    "REPLACE_WITH_EXACT_ADVERTISED_MODEL_ID": {
+      "input_per_million": "1000000",
+      "output_per_million": "10000000",
+      "cache_discount_percent": 50
+    }
+  },
+  "admission_deposit": "10000",
+  "wallet": {
+    "network": "testnet",
+    "password_file": "/ABS/private/seller/password",
+    "max_payment": "100000",
+    "max_fee": "1000"
+  }
+}

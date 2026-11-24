@@ -1,0 +1,17 @@
+/target/
+/dist/
+/state/
+/private/
+/profiles/
+/mainnet/
+/smoke*/
+*.key
+*.sqlite*
+*.keystore
+**/wallet.json
+**/keystore-*.json
+**/password
+**/password.*
+.env
+/contracts/out/
+/contracts/cache/

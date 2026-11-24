@@ -1,0 +1,18 @@
+{
+  "data_dir": "/ABS/private/mainnet/payments",
+  "policy": {
+    "mode": "free_only",
+    "daily_budget": "50000"
+  },
+  "cap": "10000",
+  "buy_peers": [],
+  "buy_prices": {},
+  "admission_deposit": "10000",
+  "channel_topup": "50000",
+  "wallet": {
+    "network": "mainnet",
+    "password_file": "/ABS/private/mainnet/password",
+    "max_payment": "100000",
+    "max_fee": "1000"
+  }
+}
