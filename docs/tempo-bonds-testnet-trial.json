@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-19",
+  "chain_id": 42431,
+  "network": "Tempo Moderato",
+  "asset": "0x20c0000000000000000000006a37da5c996874be",
+  "escrow": "0x4dA347a95C1b49b8FC90Da083058682ac7613bf2",
+  "mesh_branch": "codex/tempo-bonds",
+  "mesh_base": "dc8a8fafb8bd51efc287840a84b764c35346b21b",
+  "canned_inference": true,
+  "bond_principal_atomic": "1000000",
+  "transactions": [
+    {
+      "wallet": "seller",
+      "operation": "deploy",
+      "hash": "0x9101a77db8a0e86380aa42876b962cb47120578ce3dc3e6d341ee42035216a83",
+      "status": "finalized",
+      "bond_id": null
+    },
+    {
+      "wallet": "seller",
+      "operation": "lock",
+      "hash": "0xf1585d39856231d552f8e14661e5e78a163cc52da43b62c43261c4ae6a8ced1b",
+      "status": "finalized",
+      "bond_id": "0xd54b5af46302765b472369f78058cf10a0b5a165468c04d13849e5c225eebe0b"
+    },
+    {
+      "wallet": "seller",
+      "operation": "renew",
+      "hash": "0x8d96330ee33eb1f2193aa1ed449456f66d3afa371cc1468d3eb90276986a97db",
+      "status": "finalized",
+      "bond_id": "0xd54b5af46302765b472369f78058cf10a0b5a165468c04d13849e5c225eebe0b"
+    },
+    {
+      "wallet": "seller",
+      "operation": "withdraw",
+      "hash": "0xd6cdbc4361a906785d128508ac3fed993b2b97f2846955ce7d84b770b2014cf2",
+      "status": "finalized",
+      "bond_id": "0xd54b5af46302765b472369f78058cf10a0b5a165468c04d13849e5c225eebe0b"
+    },
+    {
+      "wallet": "buyer",
+      "operation": "lock",
+      "hash": "0xb72d17156f1600e50a1bbf22e77e36e2b48e9509b510e6c0d0500b378e8a6768",
+      "status": "finalized",
+      "bond_id": "0x6d2a44b7d0f3a8992c7c4d778dccf4121c3455dd3bb9b5c05ccc215fb653bbe4"
+    },
+    {
+      "wallet": "buyer",
+      "operation": "renew",
+      "hash": "0x150515d2de8448823c32cfe7e3511a672a714d3786addc1d262515c14d83d7b4",
+      "status": "finalized",
+      "bond_id": "0x6d2a44b7d0f3a8992c7c4d778dccf4121c3455dd3bb9b5c05ccc215fb653bbe4"
+    },
+    {
+      "wallet": "buyer",
+      "operation": "withdraw",
+      "hash": "0x9c4306ba585ab15ee91758d15bd1a19dc3c88d534c3af7c64350421fbbac757c",
+      "status": "finalized",
+      "bond_id": "0x6d2a44b7d0f3a8992c7c4d778dccf4121c3455dd3bb9b5c05ccc215fb653bbe4"
+    }
+  ],
+  "scenarios": {
+    "both_enabled": {
+      "status": 200,
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 1,
+        "total_tokens": 5
+      }
+    },
+    "bonds_only": {
+      "status": 200,
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 1,
+        "total_tokens": 5
+      }
+    },
+    "unbonded_buyer": {
+      "status": 402,
+      "usage": null
+    },
+    "withdrawn_provider": {
+      "status": 404,
+      "usage": null
+    },
+    "both_disabled": {
+      "status": 200,
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 1,
+        "total_tokens": 5
+      }
+    }
+  },
+  "bonds": [
+    {
+      "bond_id": "0xd54b5af46302765b472369f78058cf10a0b5a165468c04d13849e5c225eebe0b",
+      "initial": {
+        "amount": "1000000",
+        "host": "52ceb285f9fc6c922a82becfffd09ca8c2eb8fc6657739df6b766394fcfd166c",
+        "locked_at": 1795075966,
+        "mesh": "0x32b7fc2a4d0aea3e8e9f949800d000afbbc9df47b02f4db3033075fd1409ee05",
+        "refund_wallet": "0x85b0c31cd51033e1d34c2a4b4f1d5c9fcb876c92",
+        "unlock_at": 1795076145,
+        "withdrawn": false
+      },
+      "renewed": {
+        "amount": "1000000",
+        "host": "52ceb285f9fc6c922a82becfffd09ca8c2eb8fc6657739df6b766394fcfd166c",
+        "locked_at": 1795076116,
+        "mesh": "0x32b7fc2a4d0aea3e8e9f949800d000afbbc9df47b02f4db3033075fd1409ee05",
+        "refund_wallet": "0x85b0c31cd51033e1d34c2a4b4f1d5c9fcb876c92",
+        "unlock_at": 1795076294,
+        "withdrawn": false
+      },
+      "refund_principal_verified": true
+    },
+    {
+      "bond_id": "0x6d2a44b7d0f3a8992c7c4d778dccf4121c3455dd3bb9b5c05ccc215fb653bbe4",
+      "initial": {
+        "amount": "1000000",
+        "host": "1db3d4c78cb69971fc64bd895c688f859325de80976d3af5325fe4f204884498",
+        "locked_at": 1795076109,
+        "mesh": "0x32b7fc2a4d0aea3e8e9f949800d000afbbc9df47b02f4db3033075fd1409ee05",
+        "refund_wallet": "0x1976840708a1baed9590ab1f25da6db72031f7da",
+        "unlock_at": 1795076287,
+        "withdrawn": false
+      },
+      "renewed": {
+        "amount": "1000000",
+        "host": "1db3d4c78cb69971fc64bd895c688f859325de80976d3af5325fe4f204884498",
+        "locked_at": 1795076141,
+        "mesh": "0x32b7fc2a4d0aea3e8e9f949800d000afbbc9df47b02f4db3033075fd1409ee05",
+        "refund_wallet": "0x1976840708a1baed9590ab1f25da6db72031f7da",
+        "unlock_at": 1795076319,
+        "withdrawn": false
+      },
+      "refund_principal_verified": true
+    }
+  ],
+  "payment_only_transactions": [
+    {
+      "open": "0xe03af69ce803ffe840b27e2ada21b453cf0100b00c7bba06aa3bd5902d5a684b",
+      "close": "0x71c9806c65d711141c3dc2125efb9af5a622990a68f113163e452a79d9e03b4a",
+      "reserved": "10",
+      "captured": "5",
+      "refunded": "5"
+    },
+    {
+      "open": "0x5c228c7809a9a2bd5565951219dc1bbf9128d72f3e6c43f4ff151320726b6171",
+      "close": "0x989cf8ffaa2f75f2afd9be662a9add928bf904afd400798240f271c408100ef1",
+      "reserved": "10",
+      "captured": "5",
+      "refunded": "5"
+    }
+  ],
+  "buyer_restart_identity_preserved": true,
+  "pending_signed_attempts": 0,
+  "unresolved_payment_requests": 0
+}

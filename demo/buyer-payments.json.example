@@ -1,0 +1,25 @@
+{
+  "data_dir": "/ABS/private/buyer/payments",
+  "policy": {
+    "mode": "free_only",
+    "daily_budget": "50000"
+  },
+  "cap": "10000",
+  "buy_peers": [
+    "REPLACE_WITH_SELLER_64_CHARACTER_HEX_PEER_ID"
+  ],
+  "buy_prices": {
+    "REPLACE_WITH_EXACT_ADVERTISED_MODEL_ID": {
+      "input_per_million": "1000000",
+      "output_per_million": "10000000"
+    }
+  },
+  "admission_deposit": "10000",
+  "channel_topup": "50000",
+  "wallet": {
+    "network": "testnet",
+    "password_file": "/ABS/private/buyer/password",
+    "max_payment": "100000",
+    "max_fee": "1000"
+  }
+}

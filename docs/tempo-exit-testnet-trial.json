@@ -1,0 +1,323 @@
+{
+  "date": "2026-11-19",
+  "network": "Tempo Moderato",
+  "chain_id": 42431,
+  "asset": "0x20c0000000000000000000006a37da5c996874be",
+  "escrow": "0xd210B0356b3e45B37F29Ec763106dc23BF1cC3aa",
+  "runtime_keccak256": "0x2a5a7148b45dba623a798c19f910130cce6afafc651ef15534b59daaa8d1feb4",
+  "mesh_branch": "codex/tempo-bonds",
+  "mesh_base": "dc8a8fafb8bd51efc287840a84b764c35346b21b",
+  "canned_inference": true,
+  "exit_delay_seconds": 30,
+  "bond_principal_atomic": "1000000",
+  "transactions": [
+    {
+      "wallet": "seller",
+      "feature": "payments",
+      "operation": "close",
+      "operation_id": "mpp/00000000-0000-4000-8000-000000000000/close",
+      "hash": "0x0ac0476246c6b08b5ea9f37c87df3fc8dcc1b16a61828a28f3295998bca1d0da",
+      "status": "finalized",
+      "block_number": 44954376,
+      "block_timestamp": 1795098204,
+      "gas_ousd_atomic": "191"
+    },
+    {
+      "wallet": "seller",
+      "feature": "payments",
+      "operation": "close",
+      "operation_id": "mpp/00000000-0000-4000-8000-000000000001/close",
+      "hash": "0x8d3c42a12a261aea32521a4d84b2cf5492ae1e2b2307c45d21a88b69c9154245",
+      "status": "finalized",
+      "block_number": 44954411,
+      "block_timestamp": 1795098222,
+      "gas_ousd_atomic": "41"
+    },
+    {
+      "wallet": "seller",
+      "feature": "payments",
+      "operation": "close",
+      "operation_id": "mpp/b2dec916-9148-4ca1-a14e-ef07a1b41bbc/close",
+      "hash": "0x4360ea4ffbf4e319e1fa3179be04d285df9ad9f44af4270ad3becb1a44988d6f",
+      "status": "finalized",
+      "block_number": 44954474,
+      "block_timestamp": 1795098256,
+      "gas_ousd_atomic": "41"
+    },
+    {
+      "wallet": "seller",
+      "feature": "bonds",
+      "operation": "deploy",
+      "operation_id": "59252c61-24f6-4f0e-87bb-db3351a74cbc",
+      "hash": "0x430675a399c3f1b4ac44ff61e59fa8480606611278e88e30bc11939c5c3aff02",
+      "status": "finalized",
+      "block_number": 44954421,
+      "block_timestamp": 1795098228,
+      "gas_ousd_atomic": "2191"
+    },
+    {
+      "wallet": "seller",
+      "feature": "bonds",
+      "operation": "lock",
+      "operation_id": "02f7c4c4-6a66-4950-ab3e-4ac249b2f867",
+      "hash": "0x950688e9a2988c4b9fc4f3e3c68a0ed0bb9c7724c7f94e48cd7b382899818ce9",
+      "status": "finalized",
+      "block_number": 44954431,
+      "block_timestamp": 1795098233,
+      "gas_ousd_atomic": "792"
+    },
+    {
+      "wallet": "seller",
+      "feature": "bonds",
+      "operation": "request_exit",
+      "operation_id": "ef305d04-1e5e-476c-8188-7c557388d67f",
+      "hash": "0xf6e7bc06031309e974f564569179911608b03f7b661f21c804150ecb6f857359",
+      "status": "finalized",
+      "block_number": 44954604,
+      "block_timestamp": 1795098326,
+      "gas_ousd_atomic": "174"
+    },
+    {
+      "wallet": "seller",
+      "feature": "bonds",
+      "operation": "withdraw",
+      "operation_id": "76f2a012-5d4b-4fcc-82bc-c0a658aedf2d",
+      "hash": "0x0157fcc4c618dab270329a07fcdb9923ae2926b8c95961862b8f7f3261750fd1",
+      "status": "finalized",
+      "block_number": 44954665,
+      "block_timestamp": 1795098359,
+      "gas_ousd_atomic": "183"
+    },
+    {
+      "wallet": "buyer",
+      "feature": "payments",
+      "operation": "open",
+      "operation_id": "mpp/00000000-0000-4000-8000-000000000000/open",
+      "hash": "0xf7efe543b36f53c15b9a67190af7687242909626701a0d24dbf2d437ba300e8a",
+      "status": "finalized",
+      "block_number": 44954349,
+      "block_timestamp": 1795098189,
+      "gas_ousd_atomic": "327"
+    },
+    {
+      "wallet": "buyer",
+      "feature": "payments",
+      "operation": "open",
+      "operation_id": "mpp/00000000-0000-4000-8000-000000000001/open",
+      "hash": "0x9075c3b298beddb0158111c932e216d993837f9404c930fcc6e27729af400e3e",
+      "status": "finalized",
+      "block_number": 44954385,
+      "block_timestamp": 1795098208,
+      "gas_ousd_atomic": "34"
+    },
+    {
+      "wallet": "buyer",
+      "feature": "payments",
+      "operation": "open",
+      "operation_id": "mpp/b2dec916-9148-4ca1-a14e-ef07a1b41bbc/open",
+      "hash": "0x0e7f6e2d60b7c35e908cb6ffab700d8fba1e9dd0bc5178bf3ffc874b19933485",
+      "status": "finalized",
+      "block_number": 44954448,
+      "block_timestamp": 1795098242,
+      "gas_ousd_atomic": "34"
+    }
+  ],
+  "wallets": {
+    "seller": {
+      "address": "0x4e5a3223889A301363a5ad9F05baFBF648de47eE",
+      "balance_atomic": "999999996402",
+      "unresolved_transactions": 0,
+      "active_payment_obligations": 0,
+      "settled_payment_requests": 3,
+      "total_gas_ousd_atomic": "3613",
+      "initial_balance_atomic": "1000000000000"
+    },
+    "buyer": {
+      "address": "0x86F9D0d3c10dE691e77f7Cc51bfCD14Ed6D4630e",
+      "balance_atomic": "999999999590",
+      "unresolved_transactions": 0,
+      "active_payment_obligations": 0,
+      "settled_payment_requests": 3,
+      "total_gas_ousd_atomic": "395",
+      "initial_balance_atomic": "1000000000000"
+    }
+  },
+  "bond": {
+    "wallet": "seller",
+    "bond_id": "0xad5aaa4db404fcc0e74ded4ad12e6f0dcfb83969da504d8470922813d862931b",
+    "initial": {
+      "amount": "1000000",
+      "exit_delay_seconds": 30,
+      "host": "90cf193584e9628904f64377172df7c0d38e3353f330b86490956307c3e8d0dd",
+      "mesh": "0xde89b0e869e0721d7eeed941a99d52f11e0f0f965ce6c3d424e7d6859c821564",
+      "refund_wallet": "0x4e5a3223889a301363a5ad9f05bafbf648de47ee",
+      "withdraw_at": "0",
+      "withdrawn": false
+    },
+    "active_after_restart": {
+      "amount": "1000000",
+      "exit_delay_seconds": 30,
+      "host": "90cf193584e9628904f64377172df7c0d38e3353f330b86490956307c3e8d0dd",
+      "mesh": "0xde89b0e869e0721d7eeed941a99d52f11e0f0f965ce6c3d424e7d6859c821564",
+      "refund_wallet": "0x4e5a3223889a301363a5ad9f05bafbf648de47ee",
+      "withdraw_at": "0",
+      "withdrawn": false
+    },
+    "exiting": {
+      "amount": "1000000",
+      "exit_delay_seconds": 30,
+      "host": "90cf193584e9628904f64377172df7c0d38e3353f330b86490956307c3e8d0dd",
+      "mesh": "0xde89b0e869e0721d7eeed941a99d52f11e0f0f965ce6c3d424e7d6859c821564",
+      "refund_wallet": "0x4e5a3223889a301363a5ad9f05bafbf648de47ee",
+      "withdraw_at": "1795098356",
+      "withdrawn": false
+    },
+    "exit_verification": {
+      "accepted": true,
+      "amount": "1000000",
+      "block": "0x2adf3f0",
+      "exit_delay_seconds": 30,
+      "valid_until": 1795098356,
+      "withdraw_at": "1795098356"
+    },
+    "withdrawable_verification": {
+      "accepted": false,
+      "reason": "bond is withdrawable or finalized evidence lease already expired",
+      "valid_until": 1795098359
+    },
+    "early_withdraw_rejected": true,
+    "final": {
+      "mesh": "0xde89b0e869e0721d7eeed941a99d52f11e0f0f965ce6c3d424e7d6859c821564",
+      "host": "90cf193584e9628904f64377172df7c0d38e3353f330b86490956307c3e8d0dd",
+      "refund_wallet": "0x4e5a3223889a301363a5ad9f05bafbf648de47ee",
+      "amount": "1000000",
+      "exit_delay_seconds": 30,
+      "withdraw_at": "1795098356",
+      "withdrawn": true
+    },
+    "refund_principal_verified": true,
+    "seconds_active_before_exit": 93,
+    "active_beyond_delay": {
+      "verified": true,
+      "block_number": 44954603,
+      "held_seconds": 92,
+      "state": {
+        "mesh": "0xde89b0e869e0721d7eeed941a99d52f11e0f0f965ce6c3d424e7d6859c821564",
+        "host": "90cf193584e9628904f64377172df7c0d38e3353f330b86490956307c3e8d0dd",
+        "refund_wallet": "0x4e5a3223889a301363a5ad9f05bafbf648de47ee",
+        "amount": "1000000",
+        "exit_delay_seconds": 30,
+        "withdraw_at": "0",
+        "withdrawn": false
+      }
+    }
+  },
+  "scenarios": {
+    "payments_and_bonds": {
+      "status": 200,
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 1,
+        "total_tokens": 5
+      }
+    },
+    "bonds_only": {
+      "status": 200,
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 1,
+        "total_tokens": 5
+      }
+    },
+    "unbonded_provider": {
+      "status": 404,
+      "usage": null
+    },
+    "withdrawn_provider": {
+      "status": 404,
+      "usage": null,
+      "verification": {
+        "accepted": false,
+        "reason": "bond absent, withdrawn or below minimum amount",
+        "valid_until": 1795098382
+      }
+    },
+    "both_disabled": {
+      "status": 200,
+      "usage": {
+        "completion_tokens": 4,
+        "prompt_tokens": 1,
+        "total_tokens": 5
+      }
+    }
+  },
+  "initial_payments": {
+    "inference_requests": 2,
+    "buffered_requests": 1,
+    "streaming_requests": 1,
+    "buyer_restart_identity_preserved": true,
+    "maximum_per_request_atomic": 10,
+    "capture_per_request_atomic": 5,
+    "refund_per_request_atomic": 5
+  },
+  "escrow_balance_atomic": "0",
+  "finalized_cutoff": {
+    "number": 44954791,
+    "hash": "0x9f918e0e45d3d80411636d1f1bcca6b70a03cd47273a6ce10cccbac3292204d5",
+    "timestamp": 1795098426
+  },
+  "eligibility_policy": {
+    "active": "finalized block timestamp plus exit delay",
+    "exiting": "exact withdrawal deadline",
+    "core_validity_cap": null,
+    "eligibility_cache_owner": "Mesh",
+    "failure_retry_seconds": 1,
+    "invalidation_scope": "stopped verifier only"
+  },
+  "binary_sha256": {
+    "tempo": "775c7a3d3d7387c6f09f37757ea323a41d5761ffa8765a75a00e49a578738cae",
+    "host-smoke": "990486bacecf94d99375d039e1f515c4d4fadddb78cc6b17f40c79820cecc2df",
+    "demo-backend-fixture": "82f4da3f3396e76b30a528d56d3b442363e766950d6a89ca8ca202eedf46f55a",
+    "tempo-fixture": "6b718500d058310cde301714a49e45b5abc33c0e47302f8ccd1138f651df7749"
+  },
+  "mesh_commit": "7b2b4568de768d893fe67977685626c6f8c1e032",
+  "mesh_version": "mesh-llm 0.80.0+g7B2B45",
+  "mesh_binary_sha256": "6b874481e4c6345d267882179960f7c7da17a0e639559c493b10d53b245ad9fd",
+  "mesh_worktree_clean": true,
+  "completed_resume": {
+    "verified": true,
+    "files_preserved": 105,
+    "network_transactions_sent": 0
+  },
+  "offline_integration": {
+    "buffered_requests": 1,
+    "buyer_restart_identity_preserved": true,
+    "capture_per_request_atomic": 5,
+    "fabricated_channels": 2,
+    "inference_requests": 2,
+    "maximum_per_request_atomic": 10,
+    "network_transactions_sent": 0,
+    "offline": true,
+    "real_mesh_hosts": 2,
+    "refund_per_request_atomic": 5,
+    "streaming_requests": 1,
+    "wallet_spending_not_http_exposed": true
+  },
+  "buyer_requires_no_bond": {
+    "verified": true,
+    "buyer_bond_transactions": 0,
+    "paid_provider_close": "0x4360ea4ffbf4e319e1fa3179be04d285df9ad9f44af4270ad3becb1a44988d6f"
+  },
+  "no_bond_payments_before_escrow_deployment": {
+    "verified": true,
+    "close_hashes": [
+      "0x0ac0476246c6b08b5ea9f37c87df3fc8dcc1b16a61828a28f3295998bca1d0da",
+      "0x8d3c42a12a261aea32521a4d84b2cf5492ae1e2b2307c45d21a88b69c9154245"
+    ],
+    "deployment_hash": "0x430675a399c3f1b4ac44ff61e59fa8480606611278e88e30bc11939c5c3aff02"
+  },
+  "daily_test_budget_atomic": "20000",
+  "mesh_stack_commit": "8bcdbedee515b0d2e7baf7807c574a55130ca10a",
+  "mesh_source_tree": "bcf638459ab8e65438bd49d239fad3ced896aa02",
+  "mesh_stack_source_equivalence_verified": true
+}

@@ -1,0 +1,19 @@
+# Copy separately for each node. All paths are absolute, node-local paths.
+# MPP: both peers select the same network and fund OUSD for gas. Defaults use Moderato.
+version = 1
+
+# BUYER ONLY: uncomment this table and run `mesh-llm serve` without --model.
+# This routes remote inference while preserving the explicit node-key identity.
+# [runtime]
+# mode = "on_demand"
+
+# A package install needs no plugin entry: installing grants the requested
+# exchange hook, and Tempo keeps its config in ~/.mesh-llm/tempo/config.json.
+# Uncomment to use another config file instead.
+# [[plugin]]
+# name = "tempo"
+# [plugin.settings]
+# config_path = "/ABS/private/NODE/payments.json"
+
+# Tempo requires companion Mesh peer evidence and manifest-based enforcement.
+# Its verifier and namespace are discovered from the manifest.
